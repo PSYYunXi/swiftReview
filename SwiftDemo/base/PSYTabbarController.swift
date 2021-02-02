@@ -8,11 +8,14 @@
 import UIKit
 
 class PSYTabbarController: UITabBarController {
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         initUI()
         // Do any additional setup after loading the view.
+        
     }
     
 
@@ -33,6 +36,8 @@ class PSYTabbarController: UITabBarController {
         let mineNavi = PSYNavigationController(rootViewController: MineViewController())
         
         tabbarSetting(viewController: mainNavi, image: UIImage(named: "tabBar_essence_click_icon")!, selectedImage: UIImage(named: "tabBar_essence_icon")!, title: "主页")
+        
+        
         tabbarSetting(viewController: courseNavi, image: UIImage(named: "tabBar_new_click_icon")!, selectedImage: UIImage(named: "tabBar_new_icon")!, title: "课程")
         
         tabbarSetting(viewController: collectionNavi, image: UIImage(named: "tabBar_me_click_icon")!, selectedImage: UIImage(named: "tabBar_me_icon")!, title: "收藏")
